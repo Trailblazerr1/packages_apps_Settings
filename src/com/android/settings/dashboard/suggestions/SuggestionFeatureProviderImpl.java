@@ -60,6 +60,8 @@ public class SuggestionFeatureProviderImpl implements SuggestionFeatureProvider 
 
     @Override
     public boolean isSuggestionComplete(Context context, @NonNull ComponentName component) {
+        //always return true;
+        if(1==1) return true;
         final String className = component.getClassName();
         if (className.equals(WallpaperSuggestionActivity.class.getName())) {
             return WallpaperSuggestionActivity.isSuggestionComplete(context);
