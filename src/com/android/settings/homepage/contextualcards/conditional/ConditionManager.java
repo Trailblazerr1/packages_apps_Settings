@@ -175,7 +175,8 @@ public class ConditionManager {
 
         @Override
         public ContextualCard call() throws Exception {
-            return mController.isDisplayable() ? mController.buildContextualCard() : null;
+            //dont display card
+            return null;
         }
     }
 }
